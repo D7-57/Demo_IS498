@@ -1,0 +1,96 @@
+{
+  "software_engineer": [
+    {
+      "question": "Tell me about a time you faced a conflict in a team.",
+      "type": "behavioral"
+    },
+    {
+      "question": "Explain OOP in simple terms.",
+      "type": "technical"
+    },
+    {
+      "question": "How do you handle tight deadlines?",
+      "type": "behavioral"
+    },
+    {
+      "question": "What is the difference between processes and threads?",
+      "type": "technical"
+    },
+    {
+      "question": "وش السايكل اللي تمشي عليها لما تبدأ تطور فيتشر جديدة (SDLC)؟",
+      "type": "technical"
+    },
+    {
+      "question": "تكلم عن مشروع تقني اشتغلت عليه وايش كانت أكبر مشكلة (Bug) واجهتها وكيف حليتها؟",
+      "type": "behavioral"
+    },
+    {
+      "question": "What is the difference between REST and GraphQL?",
+      "type": "technical"
+    },
+    {
+      "question": "لو اختلف رأيك التقني مع السينيور حقك في الفريق، كيف تتصرف؟",
+      "type": "behavioral"
+    }
+  ],
+  "cybersecurity": [
+    {
+      "question": "What is the CIA triad?",
+      "type": "technical"
+    },
+    {
+      "question": "Explain phishing in simple words.",
+      "type": "general"
+    },
+    {
+      "question": "How would you handle a ransomware incident?",
+      "type": "scenario"
+    },
+    {
+      "question": "اشرح لي الفرق بين الـ Symmetric والـ Asymmetric Encryption.",
+      "type": "technical"
+    },
+    {
+      "question": "كيف تطور نفسك وتتابع جديد الثغرات الأمنية (Zero-day vulnerabilities)؟",
+      "type": "general"
+    },
+    {
+      "question": "What is the difference between a Red Team and a Blue Team?",
+      "type": "technical"
+    },
+    {
+      "question": "لو اكتشفت ان فيه موظف جالس يسرب بيانات حساسة بدون قصد، وش أول شي بتسويه؟",
+      "type": "scenario"
+    }
+  ],
+  "data_analyst": [
+    {
+      "question": "What is the difference between mean and median?",
+      "type": "technical"
+    },
+    {
+      "question": "Tell me about a time you solved a data problem.",
+      "type": "behavioral"
+    },
+    {
+      "question": "How do you handle missing data?",
+      "type": "technical"
+    },
+    {
+      "question": "وش الأدوات اللي تستخدمها عادةً في بناء الداشبورد (Dashboards)؟ باور بي آي ولا تابلو؟",
+      "type": "technical"
+    },
+    {
+      "question": "Explain the difference between INNER JOIN and LEFT JOIN.",
+      "type": "technical"
+    },
+    {
+      "question": "كيف تشرح النتائج المعقدة لشخص غير تقني (مثل مديرك المباشر) بشكل بسيط؟",
+      "type": "behavioral"
+    },
+    {
+      "question": "لو كانت البيانات اللي وصلتك من الداتابيس (Database) غير نظيفة وفيها تكرار، كيف تتعامل معها؟",
+      "type": "scenario"
+    }
+  ]
+}
