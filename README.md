@@ -1,8 +1,8 @@
 # Demo_IS498
 
-# AI Interview & CV Analyzer (FastAPI)
+## AI Interview & CV Analyzer (FastAPI)
 
-## This is a small FastAPI backend that provides:
+### This is a small FastAPI backend that provides:
 
 - 🎤 Speech-to-Text using Whisper
 
