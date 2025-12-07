@@ -14,7 +14,7 @@ from fastapi.staticfiles import StaticFiles
 # -----------------------------
 # CONFIG
 # -----------------------------
-openai.api_key = "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"
+openai.api_key = ""
 DB_PATH = "interview.db"
 QUESTION_BANK_FILE = "question_bank.json"
 
