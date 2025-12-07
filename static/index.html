@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Career Readiness Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>AI Career Readiness Platform</h1>
+
+    <!-- MODE SELECTION -->
+    <div id="mode-selection">
+        <h2>Choose Mode</h2>
+        <button onclick="selectMode('interview')">Interview Simulator</button>
+        <button onclick="selectMode('cv')">CV Analyzer</button>
+    </div>
+
+    <!-- ROLE SELECTION (INTERVIEW MODE) -->
+    <div id="role-section" class="hidden">
+        <h2>Select a Role</h2>
+        <select id="role-select">
+            <option value="software_engineer">Software Engineer</option>
+            <option value="cybersecurity">Cybersecurity Analyst</option>
+            <option value="data_analyst">Data Analyst</option>
+        </select>
+        <button onclick="startInterview()">Start Interview</button>
+    </div>
+
+    <!-- INTERVIEW SECTION -->
+    <div id="interview-section" class="hidden">
+        <h2 id="question-text"></h2>
+
+        <button id="record-btn" onclick="startRecording()">🎤 Start Recording</button>
+        <button id="stop-btn" onclick="stopRecording()" disabled>🛑 Stop</button>
+
+        <h3>Transcript:</h3>
+        <textarea id="transcript-box" readonly></textarea>
+
+        <button onclick="submitAnswer()">Submit Answer</button>
+    </div>
+
+    <!-- EVALUATION SECTION -->
+    <div id="evaluation-section" class="hidden">
+        <h2>Evaluation</h2>
+        <pre id="evaluation-output"></pre>
+
+        <button onclick="nextQuestion()">Next Question</button>
+        <button onclick="finishInterview()">Finish Interview</button>
+    </div>
+
+    <!-- FINAL REPORT -->
+    <div id="final-section" class="hidden">
+        <h2>Final Report</h2>
+        <pre id="final-output"></pre>
+    </div>
+
+    <!-- ======================= -->
+<!--      CV SECTION         -->
+<!-- ======================= -->
+<div id="cv-section" class="hidden">
+    <h2>Upload your CV (PDF)</h2>
+    <input type="file" id="cv-file" accept=".pdf">
+
+    <h3>Select a Role (for ATS relevance)</h3>
+    <select id="cv-role-select">
+        <option value="software_engineer">Software Engineer</option>
+        <option value="cybersecurity">Cybersecurity Analyst</option>
+        <option value="data_analyst">Data Analyst</option>
+    </select>
+
+    <br><br>
+
+    <button onclick="parseCV()">1️⃣ Parse CV</button>
+    <button onclick="evaluateCV()">2️⃣ Check ATS Score</button>
+    <button onclick="fullCVAnalysis()">3️⃣ Full Analysis</button>
+
+    <h3>CV Output:</h3>
+    <pre id="cv-output"></pre>
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
