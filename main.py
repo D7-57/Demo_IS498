@@ -10,11 +10,15 @@ import os
 from reportlab.lib.pagesizes import letter
 from reportlab.pdfgen import canvas
 from fastapi.staticfiles import StaticFiles
+import os
+from dotenv import load_dotenv
+
 
 # -----------------------------
 # CONFIG
 # -----------------------------
-openai.api_key = ""
+load_dotenv()
+openai.api_key = os.getenv("OPENAI_API_KEY")
 DB_PATH = "interview.db"
 QUESTION_BANK_FILE = "question_bank.json"
 
